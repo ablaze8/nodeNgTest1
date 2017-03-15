@@ -1,0 +1,9 @@
+{
+  "name": "node-ng-test1",
+  "version": "0.0.0",
+  "description": "nodeNgTest1",
+  "main": "server.js",
+  "author": {
+    "name": "UGAT174"
+  }
+}
