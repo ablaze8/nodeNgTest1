@@ -9,6 +9,7 @@
   "dependencies": {
     "express": "^4.15.2",
     "underscore": "^1.8.3",
-    "vash": "^0.12.2"
+    "vash": "^0.12.2",
+    "mysql": "^2.13.0"
   }
 }
