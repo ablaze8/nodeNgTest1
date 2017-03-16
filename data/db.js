@@ -1,6 +1,6 @@
-(function(db) {
+(function (db) {
     db.connection = undefined;
-    db.connect = function() {
+    db.connect = function () {
         var mysql = require('mysql');
         db.connection = mysql.createConnection({
             host: 'localhost',
@@ -10,12 +10,18 @@
         });
         db.connection.connect();
     };
-    db.query = function(sqlQuery) {
-        if(db.connection == null || db.connection == undefined){
+    db.query = function (sqlQuery, callback) {
+        if (db.connection == null || db.connection == undefined) {
             db.connect();
         }
-        db.connection.query(sqlQuery, function(error, results){
-            console.log(results);
+        db.connection.query(sqlQuery, function (error, result) {
+            if (error) {
+                console.log(error);
+                callback(error, null);
+            }
+            else {
+                callback(null, result);
+            }
         });
     };
 })(module.exports);
