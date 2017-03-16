@@ -1,8 +1,12 @@
 ﻿@html.extend('layout', function(model){
 	@html.block('content', function(model){
 		<p>This is from the vash engine!</p>
-		<div data-ng-app="app">
-			
-		</div>
+		 <div data-ng-controller="screen1Controller">
+			{{class}}
+		 </div>
+
+		 <div data-ng-controller="screen2Controller">
+			{{name}}
+		 </div>
 	})
 })

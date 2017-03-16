@@ -33,7 +33,9 @@
       <div class="page-header">
         <h1>@model.title</h1>
       </div>
+      <div data-ng-app="app">
         @html.block('content')  
+      </div>
     </section>
     <hr />
     <footer class="container">
@@ -48,6 +50,8 @@
     <script type="text/javascript" src="/lib/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" src="/lib/angular-bootstrap/ui-bootstrap.min.js"></script>
 	<script type="text/javascript" src="/app/app.js"></script>
+	<script type="text/javascript" src="/app/controllers/screen1Controller.js"></script>
+	<script type="text/javascript" src="/app/controllers/screen2Controller.js"></script>
     @html.block('scripts')
   </body>
 </html>

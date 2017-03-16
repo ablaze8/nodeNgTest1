@@ -35,12 +35,15 @@
     <Compile Include="data\db.js" />
     <Compile Include="data\users.js" />
     <Compile Include="public\app\app.js" />
+    <Compile Include="public\app\controllers\screen1Controller.js" />
+    <Compile Include="public\app\controllers\screen2Controller.js" />
     <Compile Include="server.js" />
     <Content Include=".bowerrc" />
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
     <Content Include="bower.json" />
     <Content Include="package.json" />
+    <Content Include="public\app\views\screen2.html" />
     <Content Include="public\css\site.css" />
     <Content Include="README.md" />
     <Content Include="views\index.vash" />
@@ -50,6 +53,8 @@
     <Folder Include="controllers\" />
     <Folder Include="data\" />
     <Folder Include="public\" />
+    <Folder Include="public\app\controllers\" />
+    <Folder Include="public\app\services\" />
     <Folder Include="public\css\" />
     <Folder Include="public\app\" />
     <Folder Include="typings\" />
