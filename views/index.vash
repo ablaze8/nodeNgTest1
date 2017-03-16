@@ -2,11 +2,12 @@
 	@html.block('content', function(model){
 		<p>This is from the vash engine!</p>
 		 <div data-ng-controller="screen1Controller">
-			{{class}}
+			<div>{{class}}</div>
+			<div><input type="text" data-ng-model="class"/></div>
 		 </div>
-
 		 <div data-ng-controller="screen2Controller">
-			{{name}}
+			 <div>{{name}}</div>
+			 <div><input type="text" data-ng-model="name"/></div>
 		 </div>
 	})
 })
