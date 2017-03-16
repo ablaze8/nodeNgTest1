@@ -1,14 +1,8 @@
 ﻿@html.extend('layout', function(model){
 	@html.block('content', function(model){
 		<p>This is from the vash engine!</p>
-		@if(model.error) {
-			<p class="text-error">Error occurred: @model.error</p>
-		}
-		
-		<ul>
-		@model.users.forEach(function(u){
-			<li>@u.UserId - <a href="mailto:@u.Email">aarsh talati</a></li>
-		})
-		</ul>
+		<div data-ng-app="app">
+			
+		</div>
 	})
 })
